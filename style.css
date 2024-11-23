@@ -168,7 +168,7 @@ h2 {
     font-family: 'Dancing Script', cursive;
 }
 
-p{
+p, li{
     font-size: 23px;
 }
 
@@ -417,7 +417,7 @@ input::placeholder {
     justify-content: center;
     margin-top: 2%;
 }
-.box1 h2 {
+.box1 h2{
     color: #8d4871;
 }
 
@@ -434,7 +434,7 @@ input::placeholder {
 }
 
 #imgWeightLoss {
-    border-radius: 10%;
+    border-radius: 30px;
 }
 
 .interviews {
@@ -598,6 +598,7 @@ input::placeholder {
 
 .containerBookAppointment{
     text-align: center;
+    width:100%;
 }
 
 .imgButton{
@@ -606,6 +607,8 @@ input::placeholder {
 
 .imgButton img{
     border-radius: 10px;
+    height: 35vh;
+    
 }
 
 .imgButton img:hover{
@@ -638,6 +641,7 @@ input::placeholder {
     font-size: 35px;
     display:flex;
     justify-content: center;
+    height: 8vh;
 }
 
 
@@ -869,3 +873,21 @@ hr {
 .btnTestimonials:hover {
     background-color: #9BA4B5;
 }
+
+
+.videoposition{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.videoposition video{
+    margin: 5px;
+    border-radius: 5px;
+    min-height: 30vh;
+}
+
+/*.servicesTileText p{
+    height: 15vh;
+}*/
