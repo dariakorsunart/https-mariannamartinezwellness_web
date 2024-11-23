@@ -1,0 +1,871 @@
+body {
+    background-color: white;
+}
+
+.header {
+    background-color: #E6A4B4;
+    padding: 20px;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 3px 4px grey;
+    border-radius: 10px;
+}
+
+.title-area {
+    height: 100%;
+    max-height: 10vh;
+}
+
+.logosmall {
+    max-height: 10vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.nav {
+    height: 100%;
+    display:flex;
+    justify-content: flex-end;
+    /*padding: 20px 50px 50px 20px;*/
+    gap: 30px;
+    background-color: #E6A4B4;
+    font-family: 'Dancing Script', cursive;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    color:#682c4f;
+    text-decoration: none;
+    font-size: 40px;
+
+}
+
+.item:hover {
+    color: white;
+}
+
+
+.dropdownmenu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    white-space:nowrap;
+}
+.dropdown-content ul{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.dropdown-content li{
+    padding: 10px;
+}
+.dropdownmenu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    font-size: 26px;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    color:#dfbfa3;
+}
+
+.menu {
+    font-size: 40 px;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+}
+
+.btnMainPagePosition {
+    padding-top: 25px;
+}
+#btnMainPage1 {
+    background-color: #dfbfa3;
+    padding: 10px 20px 10px 20px;
+    color: #682c4f;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 15px;
+    border:solid #682c4f 1px;
+    font-size:25px;
+}
+
+#btnMainPage1:hover {
+    background-color: #dfbfa3;
+    color:white;
+}
+
+#btnMainPage2 {
+    background-color: #dfbfa3;
+    padding: 10px 20px 10px 20px;
+    color:#682c4f;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 15px;
+    border:solid #682c4f 1px;
+    font-size:25px;
+}
+
+#btnMainPage2:hover {
+    background-color: #dfbfa3;
+    color:#fff;
+}
+
+#btnContactSend {
+    background-color: #dfbfa3;
+    padding: 10px 20px 10px 20px;
+    color:#682c4f;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 15px;
+    border:solid #682c4f 1px;
+    font-size:25px;
+}
+
+#btnContactSend:hover {
+    background-color: #dfbfa3;
+    color:#fff;
+}
+
+.btnDefault{
+    background-color: #dfbfa3;
+    padding: 10px 20px 10px 20px;
+    color:#682c4f;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 15px;
+    border:solid #682c4f 1px;
+    font-size:25px;
+}
+    
+.btnDefault:hover {
+    background-color: #dfbfa3;
+    color:#fff;
+    
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    color: #8d4871;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+p{
+    font-size: 23px;
+}
+
+#inf {
+    color: #86446c;
+}
+
+#phone {
+    color: #664057;
+}
+
+.headerSection1 {
+    display: flex;
+    text-align: center;
+    gap:10px;
+    position: relative;
+    text-align:start;
+    font-size: 25px;  
+    height: 85vh;
+}
+
+.headerSection1 img{
+    display: block;
+    height: 100%;
+    width:auto;
+    overflow:hidden;
+}
+
+.headerSection1LeftPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headerSection1LeftPanel p {
+    font-size: 30px;
+    color:#9c8392;
+}
+
+.headerSection1RightPanel {
+    display: flex;
+    align-items: center;
+    padding:30px;
+}
+
+.centered {
+    position: absolute;
+    bottom:20%;
+    margin-left:10%;
+    /*left: 40%;
+    transform: translate(-50%, -50%);*/
+}
+
+.box {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+.welcomePhoto {
+    width: 50%;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+.boxParPosition {
+    width: 50%;
+    text-align:center;
+    font-size: 25px ;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+.headerPosition {
+    display:flex;
+    justify-content: center;
+}
+
+.headerSection2 {
+    position: relative;
+    text-align:center;
+    color: white;
+    font-size: 35px;
+}
+
+.headerSection3{
+    position: relative;
+    text-align:start;
+    color: white;
+    font-size: 25px;
+}
+
+.headerSection3 h1 {
+    color:white;
+}
+
+.headerSection3 img{
+    height: 70vh;
+    width:100%;
+}
+
+.headerSection2 video{
+    width:100%;
+}
+
+.coverCentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.boxTwo {
+    display:grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    padding:30px;
+}
+
+.boxTwo h2 {
+    color: #8d4871;
+}
+
+.services {
+    width:100%;
+    display: flex;
+    align-self: center;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nutrition p{
+    height: 100%;
+}
+
+.energy {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.energy p{
+    height: 100%;
+}
+
+.buttonPos {
+    display: flex;
+    justify-content: center;
+}
+
+#btnMainPage3 {
+    background-color: #dfbfa3;
+    padding: 10px 20px 10px 20px;
+    color:#682c4f;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 15px;
+    border:solid #682c4f 1px;
+    font-size:25px;
+    width: 30%;
+}
+
+#btnMainPage3:hover {
+    background-color: #dfbfa3;
+    color:#fff;
+}
+
+.padding input{
+    background: transparent;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    color: white;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    width:50%;
+    font-size:20px;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 1; 
+}
+
+.btnOtherPagesPosition {
+    display:flex;
+    justify-content: center;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap:1%;
+}
+
+.parAboutLeft {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0;
+    text-align: justify;
+}
+
+.parAboutRight img {
+    display: block;
+    height: auto;
+    width:auto;
+    overflow:hidden;
+}
+
+.parAboutRight {
+    display:flex;
+    align-items: flex-start;
+}
+
+.img {
+    border-radius: 15px;
+}
+
+#imgMetabolic{
+    width:70%;
+    border-radius: 15px;
+}
+
+.imgBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.box1 h2 {
+    color: #8d4871;
+}
+
+.myWay {
+    display:grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    padding:30px;
+}
+
+.myWay h2 {
+    color: #8d4871;
+}
+
+#imgWeightLoss {
+    border-radius: 10%;
+}
+
+.interviews {
+    display:grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    padding:30px;
+}
+
+.styleContact {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerContact{
+    display: flex;
+    text-align: center;
+    gap:10px;
+    position: relative;
+    text-align:start;
+    font-size: 25px;  
+    height: 85vh;
+}
+
+.headerContact img{
+    display: block;
+    height: 100%;
+    width:auto;
+    overflow:hidden;
+}
+
+.headerContactLeftPanel{
+    display: flex;
+    align-items: center;
+    padding:30px;
+}
+
+.headerContactRightPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headerContactRightPanel p{
+    font-size: 30px;
+    color:#9c8392;
+}
+
+.contact {
+    display: flex;
+    gap:20%;
+    position: relative;
+    font-size: 30px;
+    height: 85vh;  
+}
+
+.contactLeftPanel {
+    padding:10px;
+}
+
+.contactRightPanel {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contactRightPanel #logo {
+    display: block;
+    height: auto;
+    width:70%;
+    overflow:hidden;
+}
+
+#phone {
+    display: flex;
+    justify-content: center;
+}
+
+.formPosition {
+    display: flex;
+    justify-content:center; 
+}
+
+.paddingSend input{
+    padding: 30px;
+    background: transparent;
+    border-bottom-style: solid;
+    border-bottom-color:#8d4871;
+    color: rgb(0, 0, 0);
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    width:100%;
+    font-size:20px;
+}
+
+input::placeholder {
+    color: #777777;
+    opacity: 2; 
+}
+
+.labelSend {
+    color: #000000;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnContactSendPosition {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#btnContactSend {
+    display: flex;
+    justify-content: center;
+}
+
+.imgGrid{
+    padding:10px;
+    place-items: center;
+    row-gap:30px;
+    column-gap: 10px;
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.imgGrid  img{
+    width: 90%;
+}
+
+.buttonGoToBook {
+    width: 50px;
+    height: 20px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -47px;
+    margin-top: -13.5px;
+    background-color: #e0bea3;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Dancing Script', cursive;
+    color:#8d4871;
+    border: 1px solid #8d4871;
+    appearance: button;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: baseline;
+    display: none;
+    font-size:25px;
+}
+
+.containerBookAppointment{
+    text-align: center;
+}
+
+.imgButton{
+    position: relative;
+}
+
+.imgButton img{
+    border-radius: 10px;
+}
+
+.imgButton img:hover{
+    transform: scale(1.05);
+    opacity: 0.65;
+    border: 2px solid #8d4871;
+    border-radius: 15px;
+}
+.imgButton:hover .buttonGoToBook{
+    display: block;
+    z-index: 1;
+}
+
+.buttonGoToBook:hover{
+    background-color:  #8d4871;
+    color:#e0bea3;
+    border: 1px solid #e0bea3;
+}
+
+.buttonGoToBook:hover + img{ 
+    opacity: 0.65;
+    transform: scale(1.05);
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.programlang {
+    color: #8d4871;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    display:flex;
+    justify-content: center;
+}
+
+
+.imgGridArticles {
+    padding:10px;
+    place-items: center;
+    row-gap:30px;
+    column-gap: 20px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.imgGridArticles img{
+    width:60%;
+}
+
+.readArticle {
+    width: 50px;
+    height: 20px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -47px;
+    margin-top: -13.5px;
+    background-color: #e0bea3;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Dancing Script', cursive;
+    color:#8d4871;
+    border: 1px solid #8d4871;
+    appearance: button;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: baseline;
+    display: none;
+    font-size:25px;
+}
+
+
+.containerArticle {
+    text-align: center;
+}
+
+.imgButtonArticle {
+    position: relative;
+}
+
+.imgButtonArticle img {
+    border-radius: 10px;
+}
+
+.imgButtonArticle img:hover {
+    transform: scale(1.05);
+    opacity: 0.65;
+    border: 2px solid #8d4871;
+    border-radius: 15px;
+}
+
+.imgButtonArticle:hover .readArticle{
+    display: block;
+    z-index: 1;
+}
+
+.readArticle:hover {
+    background-color:  #8d4871;
+    color:#e0bea3;
+    border: 1px solid #e0bea3;
+}
+
+.readArticle:hover + img { 
+    opacity: 0.65;
+    transform: scale(1.05);
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.infArticle {
+    color: #8d4871;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    display:flex;
+    justify-content: center;
+}
+
+#pBookingPos {
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.bookingPos {
+    display: flex;
+    justify-content: center;
+}
+
+.bookingPos img {
+    width:60%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#pArticlesPos {
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.btnBackPos {
+    display: flex;
+    justify-content: center;
+}
+
+#btnBack {
+    background-color: #dfbfa3;
+    padding: 10px 20px 10px 20px;
+    color: #682c4f;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 15px;
+    border:solid #682c4f 1px;
+    font-size:25px;
+}
+
+#btnBack:hover {
+    background-color: #dfbfa3;
+    color:white;
+}
+
+.linkPos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#articleLink {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    font-size: 20px;
+}
+
+
+
+hr {
+    border: solid 1px #9c8392;
+    border-style: outset;
+}
+
+.social {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 70px;
+}
+.social img {
+    padding: 10px;
+    width: 45px;
+    height: 45px; 
+}
+.social img:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+    color:#9c8392; 
+}
+
+.rights p {
+    font-size: 20px;
+}
+
+
+
+
+@media only screen and (max-device-width: 780px){
+.headerSection1{
+    height:60vh;
+    font-size: 16px;
+}
+.header{
+    padding: 2px;
+}    
+.nav{
+    flex-direction: row;
+    gap:3%;
+    width: 100%;
+    justify-content: center;
+}
+.item{
+    font-size:16px;
+}
+.boxParPosition{
+    font-size:16px;
+}
+
+.box{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.coverCentered{
+    font-size: 16px;
+}
+}
+
+
+#containerTestimonials{
+    display:flex;
+    justify-content: center;
+}
+#pictureTestimonials {
+    width: 720px;
+    height: 700px;
+}
+.btnTestimonials {
+    background-color: #394867;
+    color: #F1F6F9;
+    border: none;
+    font-size: 30px;
+}
+
+.btnTestimonials:hover {
+    background-color: #9BA4B5;
+}
