@@ -641,7 +641,7 @@ input::placeholder {
     font-size: 35px;
     display:flex;
     justify-content: center;
-    height: 8vh;
+    height: 15vh;
 }
 
 
@@ -888,6 +888,3 @@ hr {
     min-height: 30vh;
 }
 
-/*.servicesTileText p{
-    height: 15vh;
-}*/
