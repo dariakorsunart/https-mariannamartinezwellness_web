@@ -651,11 +651,13 @@ input::placeholder {
     row-gap:30px;
     column-gap: 20px;
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 35% 35%;
+    justify-content: center;
 }
 
 .imgGridArticles img{
-    width:60%;
+    width:85%;
+    height: 75vh;
 }
 
 .readArticle {
@@ -687,6 +689,7 @@ input::placeholder {
 
 .containerArticle {
     text-align: center;
+    width: 100%;
 }
 
 .imgButtonArticle {
