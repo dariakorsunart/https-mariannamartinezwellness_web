@@ -96,7 +96,7 @@ body {
 .btnMainPagePosition {
     padding-top: 25px;
 }
-#btnMainPage1 {
+.btnBookMainPage1 {
     background-color: #dfbfa3;
     padding: 10px 20px 10px 20px;
     color: #682c4f;
@@ -106,7 +106,7 @@ body {
     font-size:25px;
 }
 
-#btnMainPage1:hover {
+.btnBookMainPage1:hover {
     background-color: #dfbfa3;
     color:white;
 }
@@ -250,7 +250,9 @@ p, li{
     padding-right: 30px;
     padding-bottom: 15px;
 }
-
+.boxParPosition p{
+    text-align: justify;
+}
 .headerPosition {
     display:flex;
     justify-content: center;
@@ -278,6 +280,8 @@ p, li{
     height: 70vh;
     width:100%;
 }
+
+
 
 .headerSection2 video{
     width:100%;
@@ -317,6 +321,7 @@ p, li{
 
 .nutrition p{
     height: 100%;
+    text-align: justify;
 }
 
 .energy {
@@ -327,6 +332,7 @@ p, li{
 
 .energy p{
     height: 100%;
+    text-align: justify;
 }
 
 .buttonPos {
@@ -535,7 +541,7 @@ input::placeholder {
 }
 
 input::placeholder {
-    color: #777777;
+    color: lightgrey;
     opacity: 2; 
 }
 
@@ -846,6 +852,7 @@ hr {
 }
 .boxParPosition{
     font-size:16px;
+
 }
 
 .box{

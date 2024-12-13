@@ -43,7 +43,7 @@
             <h1>"Every human being is the author of his own health or desease." - Buddha</h1>
             <p>Let me help you build the healthy life you deserve!</p>
             <div class="btnMainPagePosition">
-            <button id="btnMainPage1">Book Now</button>
+            <button class="btnBookMainPage1" onclick="location.href='services.html';">Book Now</button>
             </div>
         </div>
         <div class="headerSection1RightPanel">
@@ -116,10 +116,12 @@
         <div class="centered">
             <h1>Subscribe</h1>
             <h2>Sign up for helpful Weight Loss tips and information.</h2>
-            <form>
+            <form action="https://formspree.io/f/xwpkjjrp"
+            method="POST">
                 <div class="padding">
                     <!--label class="label">Email Address</label-->
-                    <input class="input" placeholder="Type your email address here" type="email" name="Email">
+                    <input class="input" placeholder="Type your email address here" type="email" name="email"/>
+                    <input type="hidden" name="message" value="Please add me to the mailing list" />
                     <button id="btnSignUp" class="btnDefault">Sign up</button>
                 </div>
             </form>
