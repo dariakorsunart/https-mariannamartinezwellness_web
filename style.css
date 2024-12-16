@@ -893,12 +893,25 @@ hr {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+.videoposition div{
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 20vh;
     
 }
 
-.videoposition video{
-    margin: 5px;
-    border-radius: 5px;
-    min-height: 30vh;
+.videoposition iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
+
+
+
+
+
 
