@@ -2,7 +2,7 @@ body {
     background-color: white;
 }
 
-p {
+p,li {
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -181,9 +181,9 @@ button {
 }
 
 h1 {
-    font-size: 50px;
-    font-family: 'Dancing Script', cursive;
-    color: #8d4871;
+    font-size: 50px !important;
+    font-family: 'Dancing Script', cursive !important;
+    color: #8d4871 !important;
 }
 
 h2 {
@@ -281,7 +281,10 @@ p, li{
     display:flex;
     justify-content: center;
     margin-top:5%;
+    text-align: center;
+    
 }
+
 
 .headerSection2 {
     position: relative;
@@ -481,6 +484,9 @@ input::placeholder {
 .box1 p{
     text-align: justify;
 }
+.box1 {
+    padding:20px;
+}
 
 .myWay {
     display:grid;
@@ -507,6 +513,10 @@ input::placeholder {
 }
 .interviews iframe{
     border-radius: 20px;
+}
+.interviews h2{
+    color: #8d4871;
+    text-align:center;
 }
 
 .styleContact {
@@ -603,10 +613,7 @@ input::placeholder {
     font-size:20px;
 }
 
-input::placeholder {
-    color: lightgrey;
-    opacity: 2; 
-}
+
 
 .labelSend {
     color: #000000;
@@ -893,11 +900,33 @@ hr {
 .rights p {
     font-size: 20px;
 }
+.scroll-indicator {
+    display: none;
+  }
 
-
-
+/* ---------------mobile css -----------*/
 
 @media only screen and (max-device-width: 992px){
+.scroll-indicator-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 10px auto;
+        text-align: center;
+        font-style: italic;
+}
+.scroll-arrow {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+  }   
+  .scroll-label {
+    font-size: 14px;
+    color: #555;
+  }
 .logosmall {
     height: 100%;
     max-height: 50px;   /* 🔧 cap logo size to fit navbar */
@@ -1027,7 +1056,6 @@ hr {
   }
 
   .centered {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1049,8 +1077,131 @@ hr {
     width: 100%;
   }
 
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .imgGrid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .containerBookAppointment {
+    min-width: 280px; /* Adjust based on your card size */
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    background-color: #fff; /* optional for contrast */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  #containerTestimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  #pictureTestimonials {
+    max-width: 400px;
+    max-height: 60vh;
+    object-fit: contain;
+  }
+
+  .interviews {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .interviews iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+  }
+  
+  .interviews .description {
+    text-align: justify;
+    font-size: 16px;
+  }
+  .imgGridArticles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+  }
+  
+  .imgGridArticles img {
+    width: 100%;
+    max-height: 50vh;
+    max-width: 90vw;
+    object-fit: cover;
+  }
+  
+
+  .headerContact {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Contact section stacked layout */
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Logo responsive size */
+  .contactRightPanel #logo {
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+  }
+  
+  /* Form styling */
+  .formPosition {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .formPosition form {
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .paddingSend input {
+    font-size: 18px;
+    padding: 15px;
+  }
+  
+  .headerContactRightPanel p {
+    font-size: 20px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+
+
+
 }
-/*end mobile css tags*/
+
+/*-------------end mobile css tags -----------*/
 
 
 #containerTestimonials{

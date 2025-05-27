@@ -21,3 +21,22 @@ if(back !== null && next!==null){
         document.querySelector("#pictureTestimonials").src = photos[i];
     })
 }
+
+
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-container').innerHTML = data;
+    });
+
+function scrollServices(direction) {
+        const grid = document.querySelector('.imgGrid');
+        const scrollAmount = 300; // pixels per click
+    
+        if (grid) {
+          grid.scrollBy({
+            left: direction === 'right' ? scrollAmount : -scrollAmount,
+            behavior: 'smooth'
+          });
+        }
+}  
