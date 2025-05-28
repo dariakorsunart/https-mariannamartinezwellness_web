@@ -647,8 +647,8 @@ input::placeholder {
 }
 
 .buttonGoToBook {
-    width: 50px;
-    height: 20px;
+    width: 100px;
+    height: 60px;
     position:absolute;
     top: 50%;
     left: 50%;
@@ -714,7 +714,7 @@ input::placeholder {
 .programlang {
     color: #8d4871;
     font-family: 'Dancing Script', cursive;
-    font-size: 35px;
+    font-size: 32px;
     display:flex;
     justify-content: center;
     height: 15vh;
@@ -737,8 +737,8 @@ input::placeholder {
 }
 
 .readArticle {
-    width: 50px;
-    height: 20px;
+    width: 100px;
+    height: 60px;
     position:absolute;
     top: 50%;
     left: 50%;
@@ -807,6 +807,7 @@ input::placeholder {
     font-size: 35px;
     display:flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 #pBookingPos {
@@ -907,26 +908,18 @@ hr {
 /* ---------------mobile css -----------*/
 
 @media only screen and (max-device-width: 992px){
-.scroll-indicator-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin: 10px auto;
-        text-align: center;
-        font-style: italic;
-}
-.scroll-arrow {
-    background: none;
-    border: none;
-    font-size: 20px;
-    color: #555;
-    cursor: pointer;
-  }   
-  .scroll-label {
-    font-size: 14px;
-    color: #555;
-  }
+.btnMainPage1{
+    margin: 10px;
+}  
+.programlang{
+ font-size: 26px;
+} 
+
+.buttonGoToBook {
+    width: 100px;
+    height: 60px;
+}    
+
 .logosmall {
     height: 100%;
     max-height: 50px;   /* 🔧 cap logo size to fit navbar */
@@ -1086,13 +1079,14 @@ hr {
   .imgGrid {
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
+    overflow-x: visible;
     gap: 16px;
     padding: 10px;
     scroll-snap-type: x mandatory;
   }
 
   .containerBookAppointment {
+    height: 80vh;
     min-width: 280px; /* Adjust based on your card size */
     flex: 0 0 auto;
     scroll-snap-align: start;
@@ -1196,6 +1190,36 @@ hr {
     text-align: center;
   }
   
+  #pBookingPos{
+    margin-left:10%;
+    margin-right:10%;
+  }
+
+  .linkPos{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #articleLink{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .btnTestimonials {
+    background-color: #394867;
+    color: #F1F6F9;
+    border: none;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1; /* Ensures vertical centering */
+    padding: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
 
 
 
