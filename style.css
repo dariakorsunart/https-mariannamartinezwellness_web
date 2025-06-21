@@ -497,10 +497,17 @@ input::placeholder {
     flex-direction: column;
     align-items: center; /* Centers bullets */
 }
-
-.box1 p{
+.box1 ul, .box1 p{
+    align-self: flex-start; /* Left-align the list container */
     text-align: justify;
 }
+.box1 a {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+
+
 
 
 .myWay {
@@ -1171,7 +1178,7 @@ hr {
   }
 
   #pictureTestimonials {
-    max-width: 400px;
+    width:50%;
     max-height: 60vh;
     object-fit: contain;
   }
@@ -1310,8 +1317,8 @@ hr {
     justify-content: center;
 }
 #pictureTestimonials {
-    width: 720px;
-    height: 700px;
+    width: 70%;
+    height: 100%;
 }
 .btnTestimonials {
     background-color: #394867;
