@@ -180,15 +180,24 @@ button {
     
 }
 
-h1 {
-    font-size: 50px !important;
-    font-family: 'Dancing Script', cursive !important;
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', cursive;
     color: #8d4871 !important;
+}
+
+h1 {
+    font-size: 50px;
+
 }
 
 h2 {
     font-size: 40px;
-    font-family: 'Dancing Script', cursive;
+
+}
+
+h3 {
+    font-size: 32px;
+
 }
 
 p, li{
@@ -282,7 +291,8 @@ p, li{
     justify-content: center;
     margin-top:5%;
     text-align: center;
-    
+    padding:20px;
+    margin-top: 10px;
 }
 
 
@@ -462,6 +472,8 @@ input::placeholder {
 .parAboutRight {
     display:flex;
     align-items: flex-start;
+    width: 100%;
+    justify-content: center;
 }
 
 .img {
@@ -478,15 +490,18 @@ input::placeholder {
     justify-content: center;
     margin-top: 2%;
 }
-.box1 h2{
-    color: #8d4871;
+
+.box1 {
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers bullets */
 }
+
 .box1 p{
     text-align: justify;
 }
-.box1 {
-    padding:20px;
-}
+
 
 .myWay {
     display:grid;
@@ -633,18 +648,20 @@ input::placeholder {
     justify-content: center;
 }
 
-.imgGrid{
-    padding:10px;
-    place-items: center;
-    row-gap:30px;
-    column-gap: 10px;
-    display:grid;
-    grid-template-columns: 30% 30% 30%;
-}
+.imgGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 30px 10px;
+    padding: 10px;
+    place-items: center; /* Center content in each cell */
+  }
 
-.imgGrid  img{
-    width: 90%;
-}
+/* Only targets the very last child element in the parent container 7th element */  
+.imgGrid > .containerBookAppointment:nth-child(7){
+    grid-column: 2; /* Place in center column #2*/
+}  
+
+
 
 .buttonGoToBook {
     width: 100px;
@@ -684,6 +701,7 @@ input::placeholder {
 .imgButton img{
     border-radius: 10px;
     height: 35vh;
+    width:85%;
     
 }
 
@@ -905,15 +923,22 @@ hr {
     display: none;
   }
 
+
+.custom-scrollbar {display:none}
 /* ---------------mobile css -----------*/
 
-@media only screen and (max-device-width: 992px){
+@media only screen and (max-width: 992px){
 .btnMainPage1{
     margin: 10px;
 }  
 .programlang{
  font-size: 26px;
 } 
+
+.parAboutRight img{
+    height: 70vh;
+    width: 90%;;
+}    
 
 .buttonGoToBook {
     width: 100px;
@@ -938,7 +963,7 @@ hr {
 
 
   .btnMainPagePosition{
-    padding-top:0px;
+    padding-top:10px;
   }
   .headerSection1RightPanel {
     padding: 0;
@@ -1078,22 +1103,64 @@ hr {
 
   .imgGrid {
     display: flex;
-    flex-direction: row;
-    overflow-x: visible;
-    gap: 16px;
-    padding: 10px;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+    
   }
 
-  .containerBookAppointment {
-    height: 80vh;
-    min-width: 280px; /* Adjust based on your card size */
+  /* Each card takes full width */
+.containerBookAppointment {
+    scroll-snap-align: center;
+    min-width: 100%;
     flex: 0 0 auto;
-    scroll-snap-align: start;
-    background-color: #fff; /* optional for contrast */
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-sizing: border-box;
   }
+
+  .imgGrid::-webkit-scrollbar {
+    height: 4px;
+    background: rgba(0,0,0,0.1);
+  }
+  
+  .imgGrid::-webkit-scrollbar-thumb {
+    background: #8d4871;
+    border-radius: 2px;
+  }
+  
+
+  /* Arrow styling */
+.custom-scrollbar {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    pointer-events: none;
+  }
+  
+  .scroll-arrow {
+    pointer-events: auto;
+    background: rgba(141, 72, 113, 0.7);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: white;
+    z-index: 10;
+  }
+  
+  
 
   #containerTestimonials {
     display: flex;
@@ -1221,8 +1288,18 @@ hr {
     transition: background-color 0.3s;
 }
 
+.videoWrapper {
+    width: 100% !important;
+}
 
+.myWay {
+    grid-template-columns: 1fr; 
+    gap: 5%; /* Percentage gap if preferred */
+}
+.description h2 {
+    text-align: center; /* Centers the text */
 
+}
 }
 
 /*-------------end mobile css tags -----------*/
@@ -1252,22 +1329,24 @@ hr {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
     width: 100%;
+    gap: 10px; /* This adds space between each child element */
+    
 }
 
-.videoposition div{
-    margin: 5px;
-    border-radius: 10px;
-    border: 1px solid black;
-    
-  
+
+.videoWrapper {
+    width: 32.8%; /*Account for gap*/
+    height: 100%;
+    box-sizing: border-box;
 }
-    
 
-
-.videoposition iframe{
-    border-radius: 20px;
-    height: 3Array(10).fill(0).map((i,index)=>{return Math.pow(10,index)})vh;
-    min-width: 30vw;
-    max-width: 30vw;
+.videoWrapper video {
+  width: 100%;
+  height: 50vh; /* fixed height for all videos */
+  display: block;
+  border: solid black;
+  border-radius: 12px;
+  box-sizing: border-box;
 }
