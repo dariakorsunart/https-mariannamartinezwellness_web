@@ -504,6 +504,10 @@ input::placeholder {
 .box1 a {
     word-break: break-word;
     overflow-wrap: anywhere;
+    display: inline-block;
+    max-width: 100%;
+    color: #8d4871; /* Match your theme */
+    text-decoration: underline;
   }
 
 
