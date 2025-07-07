@@ -49,6 +49,10 @@ button {
     flex-wrap: wrap;
 }
 
+.colorWhite  {
+    color:white !important;
+  }
+
 /* Show desktop nav only on large screens but hidden on small screens <992px */
 .desktop-only {
   display: none;
