@@ -1101,6 +1101,10 @@ hr {
     max-width: 400px;
   }
 
+  .colorWhite  {
+    color:white !important;
+  }
+
   .centered input,
   .centered button {
     width: 100%;
