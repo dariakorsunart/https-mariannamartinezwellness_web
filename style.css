@@ -438,7 +438,7 @@ p, li{
 }
 
 input::placeholder {
-    color: white;
+    color: grey;
     opacity: 1; 
 }
 
@@ -750,7 +750,6 @@ input::placeholder {
     font-size: 32px;
     display:flex;
     justify-content: center;
-    height: 15vh;
 }
 
 
@@ -857,7 +856,7 @@ input::placeholder {
 }
 
 .bookingPos img {
-    width:60%;
+    width:50%;
     height: auto;
     border-radius: 15px;
 }
@@ -872,6 +871,7 @@ input::placeholder {
 .btnBackPos {
     display: flex;
     justify-content: center;
+    margin-bottom: 0.5rem;
 }
 
 #btnBack {
