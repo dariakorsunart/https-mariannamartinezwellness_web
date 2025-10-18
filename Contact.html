@@ -54,7 +54,7 @@
 
                             <div class="paddingSend">
                                 <label></label>
-                                <input type="text" placeholder="Message..." class="space" name="message" required>
+                                <input type="text" placeholder="Message..." maxlength="500" class="space" name="message" required>
                             </div>
                             <div class="btnMainPagePosition"> 
                                 <button id="btnMainPage1" class="btnDefault">Send</button>
@@ -109,7 +109,7 @@
         }).catch((error) => {
           console.error("FAILED...", error);
           btn.textContent = "Send";
-          alert("Failed to send. Please try again.");
+          alert("Failed to send. Please try again or report issue at https://github.com/dariakorsunart/https-mariannamartinezwellness_web/issues.");
         });
       });
     });
