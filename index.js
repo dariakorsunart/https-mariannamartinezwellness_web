@@ -72,3 +72,30 @@ function initServicesHorizontalScroll() {
     });
   }
 }
+
+
+// Function to dynamically load the Google Analytics tag
+function loadGoogleAnalytics() {
+  const head = document.head;
+  const gaMeasurementId = 'G-HY2DQXXLHF'; // Your specific Measurement ID
+
+  // 1. Create the Google Tag Manager (gtag.js) script element
+  const scriptAsync = document.createElement('script');
+  scriptAsync.async = true;
+  scriptAsync.src = `https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`;
+  head.appendChild(scriptAsync);
+
+  // 2. Create the configuration script element
+  const scriptConfig = document.createElement('script');
+  scriptConfig.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${gaMeasurementId}');
+  `;
+  head.appendChild(scriptConfig);
+
+  console.log('Google Analytics tag loaded successfully.');
+}
+
+loadGoogleAnalytics();
