@@ -1,7 +1,39 @@
 
 
-initServicesHorizontalScroll()
-initTestimonialsScroll()
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Select all elements with the class 'buttonGoToBook'
+  const bookButtons = document.querySelectorAll('.buttonGoToBook');
+
+  bookButtons.forEach(button => {
+      button.addEventListener('click', handleBookNowClick);
+  });
+
+  loadGoogleAnalytics();
+  initServicesHorizontalScroll()
+  initTestimonialsScroll()
+});
+
+function handleBookNowClick(event) {
+  const today = new Date();
+  const UNAVAILABILITY_MESSAGE = "Online booking for all appointments will resume in October 2026 as I am currently on maternity leave. Thank you for your patience!";
+  const RESUME_BOOKING_DATE = new Date('2026-10-01T00:00:00');
+
+  // Check if the current date is BEFORE the resume date
+  if (today < RESUME_BOOKING_DATE) {
+      // Stop the default action (prevent navigation to Calendly link)
+      event.preventDefault();
+
+      // Display the alert message to the user
+      alert(UNAVAILABILITY_MESSAGE);
+
+      // Optional: Log to console for debugging
+      console.log('Booking blocked due to maternity leave. Resume date: ' + RESUME_BOOKING_DATE.toDateString());
+  }
+  // If the date is on or after October 1, 2026, the function does nothing,
+  // and the default action (going to the 'href' link) proceeds as normal.
+}
 
 function initTestimonialsScroll(){
   const back = document.querySelector("#back");
@@ -98,4 +130,4 @@ function loadGoogleAnalytics() {
   console.log('Google Analytics tag loaded successfully.');
 }
 
-loadGoogleAnalytics();
+
